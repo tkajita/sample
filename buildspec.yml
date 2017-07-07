@@ -1,10 +1,6 @@
 version: 0.1
 
 phases:
-#  install:
-#    commands:
-#      - command
-
   pre_build:
     commands:
       - ./gradlew clean
@@ -13,14 +9,9 @@ phases:
     commands:
       - ./gradlew build
 
-#  post_build:
-#    commands:
-#      - command
-#      - command
-
-#artifacts:
-#  files:
-#    - location
-#    - location
-#  discard-paths: yes
-#  base-directory: location
+artifacts:
+  files:
+    - build/libs/super-hunassy-1.0.jar
+    - build/reports/**/*
+    - build/test-results/test/*.xml
+  discard-paths: yes
