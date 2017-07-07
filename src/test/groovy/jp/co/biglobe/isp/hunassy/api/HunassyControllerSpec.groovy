@@ -22,6 +22,6 @@ class HunassyControllerSpec extends Specification {
         then:
         assert response.status == HttpStatus.OK.value()
         assert response.contentType.startsWith(MediaType.TEXT_PLAIN_VALUE)
-        assert response.contentAsString == "HogeHog"
+        assert response.contentAsString == "HogeHoge"
     }
 }
