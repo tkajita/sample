@@ -1,0 +1,26 @@
+version: 0.1
+
+phases:
+#  install:
+#    commands:
+#      - command
+
+  pre_build:
+    commands:
+      - ./gradlew clean
+
+  build:
+    commands:
+      - ./gradlew build
+
+#  post_build:
+#    commands:
+#      - command
+#      - command
+
+#artifacts:
+#  files:
+#    - location
+#    - location
+#  discard-paths: yes
+#  base-directory: location
