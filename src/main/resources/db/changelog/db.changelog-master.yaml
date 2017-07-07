@@ -1,0 +1,19 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: t-kajita
+      changes:
+      - createTable:
+          tableName: sample
+          columns:
+          - column:
+              name: id
+              type: varchar(12)
+              constraints:
+                nullable: false
+          - column:
+              name: created
+              type: datetime
+              constraints:
+                nullable: false
