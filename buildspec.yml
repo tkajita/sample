@@ -1,0 +1,28 @@
+version: 0.2
+env:
+  variables:
+    SVN_URL: https://api.souko.bcos.biglobe.ne.jp/svn/AP_00006127/branches/AP_00006127_3_dev_trunk/
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
+      - svn co $SVN_URL --username $SVN_USER --password $SVN_PASSWORD --no-auth-cache
+
+#artifacts:
+#  files:
+#    - appspec.yml
+#    - etc/deployScripts/*.sh
+#    - build/libs/trial-*.jar
+#  discard-paths: yes
