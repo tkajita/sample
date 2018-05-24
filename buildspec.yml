@@ -4,7 +4,7 @@ env:
     SVN_URL: https://api.souko.bcos.biglobe.ne.jp/svn/AP_00006127/branches/AP_00006127_3_dev_trunk/
   parameter-store:
     SVN_USER: "sokoban.username"
-    SVN_PASSWORD: "sokoban.test"
+    SVN_PASSWORD: "sokoban.password"
 
 phases:
   install:
